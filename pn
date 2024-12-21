@@ -1,0 +1,22 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main() {
+    string trloi;
+    
+    while (true) {
+        cout << "Làm người yêu anh nhé! (yes hoặc no)" << endl;
+        getline(cin, trloi);
+        transform(trloi.begin(), trloi.end(), trloi.begin(), ::tolower);
+
+        if (trloi == "yes") {
+            cout << "Yêu em nhìuuuu <3" << endl;
+            break;
+        } else {
+            cout << "Sai rùi, cho nói lại" << endl;
+        }
+    }
+
+    return 0;
+}
